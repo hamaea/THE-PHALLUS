@@ -1,0 +1,10 @@
+{
+  "name": "the-phallus-prototype",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "python3 tools/serve.py",
+    "test": "node --test tests/*.test.js",
+    "assets": "python3 tools/build-assets.py"
+  }
+}

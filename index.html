@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE PHALLUS</title>
+    <link rel="stylesheet" href="style.css?v=cartheading1">
+</head>
+<body class="booting">
+    <section id="introduction" aria-label="Welcome to THE PHALLUS" hidden>
+      <div class="intro-copy"><p>WELCOME TO</p><h1>THE PHALLUS</h1></div>
+    </section>
+    <div id="site">
+      <header class="site-header">
+        <div class="publication-brand">
+          <a class="site-title" href="#/home">THE PHALLUS</a>
+          <a class="edition-switch" href="#/assembly" aria-label="Build a Custom Edition">
+            <span class="edition-first" aria-hidden="true">FIRST EDITION</span>
+            <span class="edition-custom" aria-hidden="true">CUSTOM EDITION</span>
+          </a>
+        </div>
+        <button class="logo-toggle" type="button" aria-label="Open colophon" aria-controls="colophon" aria-expanded="false">
+          <img src="assets%20NEW/LOGO-PNG.png" width="497" height="497" alt="">
+        </button>
+      </header>
+      <p id="storage-warning" role="alert" hidden></p>
+      <p id="notification" role="status" aria-live="polite"></p>
+      <main id="app"></main>
+    </div>
+    <div class="sidebar-backdrop" hidden></div>
+    <aside id="colophon" class="site-sidebar" role="dialog" aria-modal="true" aria-label="Publication colophon" inert hidden>
+      <div class="colophon-top">
+        <h2>THE PHALLUS</h2>
+        <p>SEPTEMBER 2026<br>PHOTO BY E. HAMABUCHI<br>MODEL BY ANONYMOUS</p>
+        <nav aria-label="Primary navigation">
+          <a href="#/bag">CART <span id="bag-count">(0)</span></a>
+        </nav>
+      </div>
+      <div class="colophon-signature"><p>エ AM ELLIA</p><p>@individuelliaty</p></div>
+    </aside>
+    <aside id="shopping-bag" class="site-sidebar bag-sidebar" role="dialog" aria-modal="true" aria-label="Shopping cart" inert hidden>
+      <div class="bag-content"></div>
+    </aside>
+    <noscript>This prototype requires JavaScript to assemble and export a book.</noscript>
+    <script src="vendor/pdf-lib.min.js"></script>
+    <!-- One revision for the preview modules also refreshes older browser caches. -->
+    <script type="importmap">
+      {"imports": {
+        "./js/book.js": "./js/book.js?v=assembly2",
+        "./js/views.js": "./js/views.js?v=assembly2",
+        "./js/migration.js": "./js/migration.js?v=assembly2",
+        "./js/book-viewer.js": "./js/book-viewer.js?v=exhibition3",
+        "./js/book-3d.js": "./js/book-3d.js?v=stationary1",
+        "./js/book-surfaces.js": "./js/book-surfaces.js?v=exhibition3",
+        "./js/home-exhibition.js": "./js/home-exhibition.js?v=exhibition3",
+        "./js/poster-exhibition.js": "./js/poster-exhibition.js?v=exhibition3",
+        "./js/paper-motion.js": "./js/paper-motion.js?v=editorial1",
+        "./js/site-shell.js": "./js/site-shell.js?v=cartheading1",
+        "./js/commerce.js": "./js/commerce.js?v=checkout1",
+        "./js/storage.js": "./js/storage.js?v=checkout1"
+      }}
+    </script>
+    <script type="module" src="script.js?v=cartheading1"></script>
+</body>
+</html>
